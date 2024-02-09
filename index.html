@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter a task">
+      <button class="btn-add" type="submit">
+        <span class="fas fa-plus"></span>
+      </button>
+    </form>
+    <div class="filter-buttons">
+      <button class="active" id="all-button">
+        <strong>All</strong>
+      </button>
+      <button id="completed-button">
+        <strong>Completed</strong>
+      </button>
+      <button id="pending-button">
+        <strong>Pending</strong>
+      </button>
+    </div>
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

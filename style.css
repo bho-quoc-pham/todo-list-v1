@@ -1,0 +1,167 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  background-color: #13E328;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li span {
+  flex-grow: 1;
+}
+
+li button {
+  background-color: #0085FF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 20px
+}
+
+li button:hover {
+  background-color: #5C5C5C;
+  color: #fff;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  width: 124px;
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #5C5C5C;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #E1E1E1;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-buttons button.active {
+  background-color: #8F8F8F;
+  color: #fff;
+  border: none;
+}
+
+.filter-buttons button:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+.filter-buttons button:last-child {
+  margin-right: 0;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid #E1E1E1;
+  padding: 10px;
+}
+
+/* 
+Styling the checkbox and the span that follows it
+ */
+
+/* Hide the default checkbox appearance */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #cfcfcf;
+  outline: none;
+  position: relative;
+}
+
+/* Style the checkmark inside the checkbox */
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border-bottom: 2px solid #cfcfcf;
+  border-right: 2px solid #cfcfcf;
+  display: none;
+  color: #cfcfcf;
+}
+
+input[type="checkbox"]:checked::before {
+  display: block;
+}
+
+#todo-list li input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.delete-button {
+  background-color: #FF0000;
+  margin-left: 10px;
+}
